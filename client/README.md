@@ -1,5 +1,9 @@
 The task for this week was to create a full stack application with React.js
 
+link to my client site - https://week-07-project.vercel.app/
+Link to my server on render - https://post-book-server.onrender.com/
+
+
 User Stories
 🐿️ As a user, I want to be able to create new posts and add them to the page
 🐿️ As a user, I want to be able to assign a category to each post
