@@ -10,7 +10,7 @@ export default function Post() {
     }, []);
 
     async function getPosts() {
-        const response = await fetch("http://localhost:8080/posts");
+        const response = await fetch("https://post-book-server.onrender.com/posts");
         const data = await response.json();
         setPosts(data);
     }
@@ -18,7 +18,7 @@ export default function Post() {
     
     async function handleDeletePost(id) {
         
-        await fetch(`http://localhost:8080/posts/${id}`, {
+        await fetch(`https://post-book-server.onrender.com/posts/${id}`, {
             method: "DELETE"
         });
         // After deleting, fetch posts again to update the page

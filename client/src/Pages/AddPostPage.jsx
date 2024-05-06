@@ -5,7 +5,7 @@ export default function AddPost (){
 
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("http://localhost:8080/add", {
+        fetch("https://post-book-server.onrender.com/add", {
             method: "POST",
             body: JSON.stringify(form),
             headers: {"Content-Type": "application/json"}

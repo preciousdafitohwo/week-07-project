@@ -14,7 +14,7 @@ export default function PostsByCategory() {
 
   // Function to fetch posts by category
   async function fetchPostsByCategory(category) {
-    const response = await fetch(`http://localhost:8080/posts-by-category?category=${category}`);
+    const response = await fetch(`https://post-book-server.onrender.com/posts-by-category?category=${category}`);
     const data = await response.json();
     setPosts(data);
   }
@@ -26,7 +26,7 @@ export default function PostsByCategory() {
 
   // Function to handle post deletion
   async function handleDeletePost(id) {
-    await fetch(`http://localhost:8080/posts/${id}`, {
+    await fetch(`https://post-book-server.onrender.com/posts/${id}`, {
       method: "DELETE"
     });
     // After deleting, fetch posts again to update the page
