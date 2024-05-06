@@ -1,0 +1,133 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 2%;
+    
+}
+
+ #h1 {
+    font-size: 3em;
+}
+
+.nav-link {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: grey;
+    padding: 7px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {background-color: green;
+    color: white;
+
+}
+.main-div{
+    width: 75vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+#select {width: 100%;}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  
+}
+
+#add-post {
+    padding: 10px;
+    background-color: grey;
+}
+
+#add-post:hover {
+    background-color: green;
+    cursor: pointer;
+    transform: scale(1.025);
+    color: white;
+}
+
+li {
+    font-size: 1.5em;
+    margin-top: 5%;
+}
+
+.posts-div {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bolder;
+}
+#delete {
+padding: 5px;
+}
+#delete:hover { color: white;
+    background-color: red;
+    cursor: pointer;
+
+}
+.post-container {
+    width: 80%;
+}
+
+@media (max-width: 500px) { 
+
+    #h1 {
+        font-size: 2em;
+    }
+    h1{font-size: 1.6em;}
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;    
+    }
+    .nav-link {
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: white;
+        color: grey;
+        padding: 3px;
+        width: auto;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+ }
